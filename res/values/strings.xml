@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This file contains resource definitions for displayed strings, allowing
+     them to be changed based on the locale and options. -->
+
+<resources>
+    <!-- Simple strings. -->
+    <string name="app_label">Bad Diagnosis</string>
+    <string name="question_header"><i>Question <b>{x}</b> of {y}</i></string>
+	<string name="answer_yes">YES</string>
+	<string name="answer_no">NO</string>
+	<string name="random_fact_header">Random \"fact\":</string>
+	<string name="restart">GO AGAIN!</string>
+	<string name="diagnosis_header"><i>Diagnosis:</i></string>
+	<string name="diagnosis">Looks like you have a bad case of explosive diarrhea.</string>
+	<string name="share_this">SHARE</string>
+    <!-- This is a complex string containing style runs. -->
+</resources>

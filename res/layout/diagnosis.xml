@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/question_layout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top">
+
+	<include android:id="@+id/header" layout="@layout/header" />
+	
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		
+		<!-- Main Content -->
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+		
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:paddingRight="10dp"
+				android:paddingLeft="10dp">
+				
+				<RelativeLayout
+					android:id="@+id/question_header_layout"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+				
+					<TextView
+						android:id="@+id/question_header"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/diagnosis_header"
+						style="@style/txt_white"
+						android:maxLines="1" />
+						
+					<!-- Question Progress Meter -->
+					<LinearLayout
+						android:id="@+id/progress_layout"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:orientation="horizontal"
+						android:layout_marginTop="6dp">
+						
+						<ImageView
+							android:id="@+id/progress_question_1"
+							android:src="@drawable/progress_past"
+							style="@style/progress_meter" />
+							
+						<ImageView
+							android:id="@+id/progress_question_2"
+							android:src="@drawable/progress_past"
+							style="@style/progress_meter" />
+							
+						<ImageView
+							android:id="@+id/progress_question_3"
+							android:src="@drawable/progress_past"
+							style="@style/progress_meter" /><!--
+							
+						<ImageView
+							android:id="@+id/progress_question_4"
+							android:src="@drawable/progress_past"
+							style="@style/progress_meter" />
+							
+						<ImageView
+							android:id="@+id/progress_question_5"
+							android:src="@drawable/progress_past"
+							style="@style/progress_meter" />
+							
+					--></LinearLayout>
+					<!-- END Question Progress Meter -->
+					
+				</RelativeLayout>
+				
+				<ImageView style="@style/hr" />
+				
+				<TextView
+					android:id="@+id/diagnosis"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/diagnosis"
+					style="@style/txt_white"
+					android:textSize="24sp"
+					android:background="@drawable/thumbs_down" />
+			
+			</LinearLayout>
+			
+			<!-- Yes/No Buttons -->
+			
+			<RelativeLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/button_inset"
+				android:layout_marginTop="25dp"
+				android:gravity="center_vertical"
+				android:padding="10dp">
+				
+				<Button
+					android:id="@+id/restart"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:minWidth="145dp"
+					android:text="@string/restart" />
+					
+				<Button
+					android:id="@+id/share"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="@string/share_this"
+					android:layout_alignParentRight="true"
+					android:minWidth="145dp" />
+				
+			</RelativeLayout>
+			<!-- END Yes/No Buttons -->
+		
+		</LinearLayout>
+		<!-- END Main Content -->
+	
+	</ScrollView>
+	
+</LinearLayout>

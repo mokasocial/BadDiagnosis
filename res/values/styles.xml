@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- This file contains resource definitions for style.  A style is
+     a collection of named values that can be applied as a group.  Here,
+     we are using a style to define a common set of XML attributes that
+     will be used in multiple tags. -->
+
+<resources>
+    
+    <style name="hr">
+    	<item name="android:src">@drawable/hr</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    
+    <style name="txt_white">
+    	<item name="android:shadowColor">#000000</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:shadowRadius">0.1</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:textColor">#FFFFFF</item>
+    </style>
+    
+    <style name="txt_offwhite" parent="txt_white">
+    	<item name="android:textColor">#ececec</item>
+    </style>
+    
+    <style name="progress_meter">
+    	<item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:paddingLeft">3dp</item>
+    </style>
+    
+    <style name="TextAppearance"> 
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColorHighlight">#FFFF9200</item>
+        <item name="android:textColorHint">#00000000</item>
+        <item name="android:textColorLink">#5C5CFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style> 
+ 
+    <style name="TextAppearance.Inverse"> 
+        <item name="android:textColor">#000000</item>
+        <item name="android:textColorHint">#00000000</item>
+        <item name="android:textColorLink">#0000EE</item>
+    </style>
+
+</resources>
+

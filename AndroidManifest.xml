@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mokasocial.baddiagnosis" android:versionName="1.1" android:versionCode="2">
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="7"></uses-sdk>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <application android:label="@string/app_label" android:theme="@style/BadDiagnosis" android:icon="@drawable/app_launcher" android:debuggable="false">
+        <activity android:name="MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ActivityDiagnosis"></activity>
+        <activity android:name="ActivityQuestion"></activity>
+    </application>
+</manifest>

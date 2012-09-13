@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="BadDiagnosis" parent="@android:style/Theme.Black">
+		<item name="android:buttonStyle">@style/Widget.Button</item>
+		<item name="android:windowBackground">@drawable/bg</item>
+		<item name="android:windowNoTitle">true</item>
+		
+		<!-- Text styles [THIS DOES NOTHING?!] -->
+        <item name="android:textAppearance">@style/TextAppearance</item>
+        <item name="android:textAppearanceInverse">@style/TextAppearance.Inverse</item>
+
+	</style>
+	<style name="Widget.Button" parent="@android:style/Widget"> 
+        <item name="android:background">@drawable/btn_default</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmallInverse</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:padding">20dp</item>
+    </style>
+</resources>
